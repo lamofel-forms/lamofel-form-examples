@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback form example</title>
+</head>
+<body>
+  <!-- Replace YOUR_FORM_ID with the endpoint from https://lamofel.com/?ref=github-examples -->
+  <form action="https://lamofel.com/f/YOUR_FORM_ID" method="POST">
+    <h1>Send us feedback</h1>
+
+    <p>
+      <label for="rating">How would you rate your experience?</label><br>
+      <select id="rating" name="rating" required>
+        <option value="">Choose one</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Okay</option>
+        <option value="2">2 - Poor</option>
+        <option value="1">1 - Very poor</option>
+      </select>
+    </p>
+    <p>
+      <label for="comments">Your feedback, in your own words</label><br>
+      <textarea id="comments" name="comments" rows="6" required></textarea>
+    </p>
+    <p>
+      <label for="email">Your email (optional, if you would like a reply)</label><br>
+      <input type="email" id="email" name="email">
+    </p>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+    <p><button type="submit">Send feedback</button></p>
+  </form>
+</body>
+</html>

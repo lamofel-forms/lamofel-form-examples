@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waitlist form example</title>
+</head>
+<body>
+  <!-- Replace YOUR_FORM_ID with the endpoint from https://lamofel.com/?ref=github-examples -->
+  <form action="https://lamofel.com/f/YOUR_FORM_ID" method="POST">
+    <h1>Join the waitlist</h1>
+
+    <p>
+      <label for="email">Your email</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <p>
+      <label for="interest">What are you hoping to use it for? (optional)</label><br>
+      <input type="text" id="interest" name="interest">
+    </p>
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" hidden>
+    <p><button type="submit">Join the waitlist</button></p>
+  </form>
+</body>
+</html>
